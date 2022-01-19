@@ -39,7 +39,6 @@ class DurationMetrics:
     def getJobDuration(self):
         # TODO: get job duration
         jenkinsJobs = self.server.get_all_jobs()
-        print(jenkinsJobs)
         myJob = self.server.get_job_info('python-test', 0, True)
         print(myJob)
         myJobBuilds = myJob.get('builds')
